@@ -12,7 +12,7 @@ pub fn average_cpu_usage() {
         let curr = stats[0];
         if !last.values.is_empty() {
             let usage = calculate_usage(&curr, &last);
-            println!("{usage:.0}");
+            println!("{usage:02.0}");
         }
         last = curr;
         thread::sleep(delay);

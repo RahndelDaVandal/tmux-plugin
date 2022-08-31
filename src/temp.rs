@@ -9,7 +9,7 @@ pub fn run() {
     let delay = time::Duration::from_millis(2000);
     loop{
         let t = get_cpu_temp();
-        println!("{t:.1}");
+        println!("{t:.0}");
         thread::sleep(delay);
     }
 }
